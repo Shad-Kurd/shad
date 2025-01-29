@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Adds the blurred effect */
+    border: 5px solid rgba(255, 255, 255, 0.3); /* Light border for contrast */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow around the photo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Hover Effect */
+.profile-pic:hover {
+    transform: scale(1.05); /* Slightly enlarge the photo on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+    backdrop-filter: blur(15px); /* Increase blur on hover */
+}
+
+
+/* Title */
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Social Media Icons */
+/* Social Media Icons */
+.socials a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 30px; /* Smaller size of the icons */
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    padding: 12px; /* Adjust the padding to keep it proportionate */
+    border-radius: 50%; /* Circular background */
+    background-color: #f0f0f0; /* Default background color */
+}
+
+/* Hover effect */
+.socials a:hover {
+    transform: scale(1.1); /* Slight zoom in the icon */
+    color: #fff; /* Change the icon color to white when hovered */
+    background-color: #007bff; /* Change background color on hover */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Glow effect around the icon */
+}
+
+/* Icon color based on social network */
+.socials a[href*="instagram"] i {
+    color: #E4405F; /* Instagram color */
+}
+
+.socials a[href*="snapchat"] i {
+    color: #FFFC00; /* Snapchat color */
+}
+
+.socials a[href*="telegram"] i {
+    color: #0088cc; /* Telegram color */
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .socials a {
+        font-size: 35px;
+    }
+}
+
+
+/* Background */
+body {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #6a11cb, #2575fc); /* Gradient colors */
+    background-size: 400% 400%; /* Makes the gradient larger to create smooth movement */
+    animation: gradientMove 10s ease infinite; /* Animates the gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Basic paragraph styling */
+.hover-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333333; /* Initial text color (dark gray) */
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for zoom and color */
+}
+
+/* Hover effect */
+.hover-text:hover {
+    transform: scale(0.9); /* Zooms out the text */
+    color: #007bff; /* Change color to blue on hover */
+}
+
+
+
+/* Basic styling for the header */
+.hover-header {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px; /* Header font size */
+    color: #333333; /* Initial color (dark gray) */
+    text-align: center;
+    margin: 20px auto;
+    transition: all 0.3s ease; /* Smooth transition for zoom and color */
+}
+
+/* Hover effect for the header */
+.hover-header:hover {
+    transform: scale(0.9); /* Zoom out effect */
+    color: #007bff; /* Change color to blue on hover */
+}
+
+/* Basic styling for the paragraph */
+.hover-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333333; /* Initial color */
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the paragraph */
+.hover-text:hover {
+    transform: scale(0.9); /* Zooms out the text */
+    color: #007bff; /* Change color to blue on hover */
+}
