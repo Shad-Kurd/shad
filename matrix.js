@@ -62,6 +62,15 @@ function draw() {
 }
 
 
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.style.transition = 'transform 0.4s ease-in-out, filter 0.4s ease-in-out';
+        });
+    }, 200); // Delay of 200ms to prevent initial lag
+});
+
+
 setInterval(draw, 50);
 
 
