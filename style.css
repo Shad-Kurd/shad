@@ -372,3 +372,10 @@ body {
         max-width: 400px; /* Limits size */
     }
 }
+
+
+.portfolio-item {
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+    transform: scale(1); /* Ensure default size */
+    filter: blur(0);
+}
