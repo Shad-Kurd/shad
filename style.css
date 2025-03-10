@@ -379,3 +379,14 @@ body {
     transform: scale(1); /* Ensure default size */
     filter: blur(0);
 }
+
+
+.portfolio-item {
+    transition: none; /* Disable transitions on initial load */
+    transform: scale(1);
+    filter: blur(0);
+}
+
+body.loaded .portfolio-item {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
