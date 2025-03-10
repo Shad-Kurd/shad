@@ -365,3 +365,10 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    .container {
+        transform: scale(0.9); /* Shrinks the div */
+        width: 90%; /* Adjusts width */
+        max-width: 400px; /* Limits size */
+    }
+}
