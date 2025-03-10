@@ -46,23 +46,25 @@ window.addEventListener('load', () => {
 function draw() {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
+
     ctx.fillStyle = '#00ff00';
     ctx.font = fontSize + 'px monospace';
 
     for (let i = 0; i < drops.length; i++) {
         const text = characters.charAt(Math.floor(Math.random() * characters.length));
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-        
+
         if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
             drops[i] = 0;
         }
         drops[i]++;
     }
+
+    requestAnimationFrame(draw); // Smooth animation
 }
 
-
-setInterval(draw, 50);
+// Start the animation
+requestAnimationFrame(draw);
 
 
 window.addEventListener('load', () => {
