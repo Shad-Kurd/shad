@@ -62,15 +62,18 @@ function draw() {
 }
 
 
+setInterval(draw, 50);
+
+
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.querySelectorAll('.portfolio-item').forEach(item => {
-            item.style.transition = 'transform 0.4s ease-in-out, filter 0.4s ease-in-out';
+            item.style.transition = 'transform 0.5s ease, filter 0.5s ease';
         });
-    }, 200); // Delay of 200ms to prevent initial lag
+    }, 500); // Wait for 500ms before enabling transitions
 });
 
-
-setInterval(draw, 50);
-
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded'); // This enables smooth transitions after load
+});
 
